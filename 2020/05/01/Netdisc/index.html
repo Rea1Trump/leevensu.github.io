@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="网盘&amp;nbsp;&amp;nbsp;这次我们讲讲网盘，网盘这东西相信用过智能手机的人都用过，先说一下有哪些类型吧，然后在讨论一下比较适合的网盘。  分类 这里就不做严格分类了，稍作简单区分就好了（都是我自己区分的，嘿嘿，主要是为了简单区别一下），有些似乎不能称做网盘，但是我们还是这样讲吧   存储型 这类网盘一般容量比较大，通常给用户充足的空间，用来做为文件的备份保藏和网络资源的收藏，百度网盘是很典型的存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Netdisc">
+<meta property="og:url" content="http://yoursite.com/2020/05/01/Netdisc/index.html">
+<meta property="og:site_name" content="leevensu">
+<meta property="og:description" content="网盘&amp;nbsp;&amp;nbsp;这次我们讲讲网盘，网盘这东西相信用过智能手机的人都用过，先说一下有哪些类型吧，然后在讨论一下比较适合的网盘。  分类 这里就不做严格分类了，稍作简单区分就好了（都是我自己区分的，嘿嘿，主要是为了简单区别一下），有些似乎不能称做网盘，但是我们还是这样讲吧   存储型 这类网盘一般容量比较大，通常给用户充足的空间，用来做为文件的备份保藏和网络资源的收藏，百度网盘是很典型的存">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/EPX.png">
+<meta property="article:published_time" content="2020-05-01T11:29:08.000Z">
+<meta property="article:modified_time" content="2020-05-05T10:06:15.907Z">
+<meta property="article:author" content="leevensu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/EPX.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true,"busuanzi_count":{"enable":true}},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/05/01/Netdisc/"/>
+
+
+
+
+
+  <title>Netdisc | leevensu</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">leevensu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/01/Netdisc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="leevensu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leevensu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Netdisc</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-01T19:29:08+08:00">
+                2020-05-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="网盘"><a href="#网盘" class="headerlink" title="网盘"></a>网盘</h4><p>&nbsp;&nbsp;这次我们讲讲网盘，网盘这东西相信用过智能手机的人都用过，先说一下有哪些类型吧，然后在讨论一下比较适合的网盘。</p>
+<hr>
+<h5 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h5><blockquote>
+<p>这里就不做严格分类了，稍作简单区分就好了（都是我自己区分的，嘿嘿，主要是为了简单区别一下），有些似乎不能称做网盘，但是我们还是这样讲吧</p>
+</blockquote>
+<ul>
+<li>存储型<ul>
+<li>这类网盘一般容量比较大，通常给用户充足的空间，用来做为文件的备份保藏和网络资源的收藏，百度网盘是很典型的存储类网盘，随便搞点东西就给你扩容，说实在的，有些让人惊讶，但是限速的话还是让人受不了，下就很鸡肋，你保存了再多，使用不便有什么意义呢？</li>
+</ul>
+</li>
+<li>分享型<ul>
+<li>此类网盘支持分享自己的文件，其实这个功能意义更大一些，因为如果全部的文件都要靠你自己上传到网盘，那没多大意义，又是百度网盘，分享也是做的很好呢，你随便找一个XXX的破解版，很大可能性就是百度的分享链接，得到其他分享链接总感觉不是那么接地气，感觉是野生网盘，没有安全感。</li>
+</ul>
+</li>
+<li>同步型<ul>
+<li>用在不同设备文件同步和传输文件的功能，这么说吧，如果你要从手机上传文件给电脑最好的方法是什么，数据线当然最方便了，但如果你就是不想用那用什么呢？快传？蓝牙？QQ？微信？百度云？这些方法倒是一个可行的选择，但是总有些时候感觉不是那么舒服，搞个文件还要用社交软件。<ul>
+<li>Resilio Sync是一个不错的工具，可以同步但是在国内被墙不讨论</li>
+<li>Syncthing 也不错，没有被墙，同一局域网下同步较快，可以当作文件传输的工具</li>
+<li>微力同步这个是国产软件，其实很不错，虽然我没有用过，（实在不想装太多，我已经有比较好用的盘了），但是非常高颜值，而且看各路评价不错。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h5><hr>
+<ul>
+<li><h6 id="百度网盘"><a href="#百度网盘" class="headerlink" title="百度网盘"></a>百度网盘</h6><ul>
+<li>不讲（无情抛弃）</li>
+<li>油猴插件+IDM下载速度保持在700k左右<ul>
+<li><img src="/images/EPX.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h6 id="微云"><a href="#微云" class="headerlink" title="微云"></a>微云</h6><ul>
+<li>微云是腾讯产品，我记得之前腾讯都没有这玩意，（在我小学的时候，用来存洛克王国的外挂用的是qq的中转站，后来突然出现微云这个东西着实把我吓一跳，还以为我的外挂被腾讯搞了），现在吧，微云速度还挺好的，速度比起百度云要好很多了,怎么都有1MB，上传也很快，现在用来存破解补丁啥的，比U盘方便，还有一件事，QQ的离线运输比直接传要快蛮多，建议使用离线运输。</li>
+<li>容量不大，10G标准容量，不建议开多大容量吧，存点常用的小东西，挺方便。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h6 id="OneDrive"><a href="#OneDrive" class="headerlink" title="OneDrive"></a>OneDrive</h6><ul>
+<li>这是一个我用着比较迷惑的东西，滑稽的是啥呢，这个玩意网页版被墙，客户端可以正常使用但是很奇怪，我用着也是奇奇怪怪的，不太建议真的吧自己常用的文件搬上去，不然急用的时候这玩意会让你很难受，速度的话，不要想太多，存存文件，同步一下图片也就这样，其实不太实用，建议关闭开机启动。</li>
+<li>容量5G，听说淘宝有便宜充钱扩容服务，十多块钱可以开蛮大。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h6 id="MEGAsync"><a href="#MEGAsync" class="headerlink" title="MEGAsync"></a>MEGAsync</h6><ul>
+<li>这个跟OneDrive有相似之处，网页版被墙，客户端（电脑端，手机端都有）可以使用，至于注册我就不记得了，可以试试，这个速度能跟上，有2MB左右，我还挺满意的东西。</li>
+<li>容量也很良心，85G初始流量，没有流量限制（啥叫流量限制，就是虽然你有足够的流量但是你下载上传的量有个限制，他会统计你的流量，有些只有1G限制，好烦躁，坚果云了解一下，能受得了可以试试）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h6 id="坚果云"><a href="#坚果云" class="headerlink" title="坚果云"></a>坚果云</h6><ul>
+<li>这个，速度老好了，没有速度限制，但是空间小一些，5G，下载有流量限制，1G每月吧大概。就这么多，对容量要求不大，下载东西不大，追求速度稳定的，强烈推荐。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h6 id="谷歌的网盘"><a href="#谷歌的网盘" class="headerlink" title="谷歌的网盘"></a>谷歌的网盘</h6><ul>
+<li>这个用着舒服，无比舒服，容量15G，使用办公全家桶，和谷歌相册（非原图不占空间），用起来很棒，有机会的一定尝试一下，跟MEGAsync一样很良心。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h6 id="iCloud"><a href="#iCloud" class="headerlink" title="iCloud"></a>iCloud</h6><ul>
+<li>苹果用户自己掂量掂量就好，速度如何，但是不用担心他跑路，空间我就不清楚了，注册了没怎么玩（我可没有苹果设备，虚拟机体验了一把（ID是找朋友注册的，以前的ID忘了），感受是啥：有时侯，也许，有钱的确是一种烦恼）。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h6 id="天翼云"><a href="#天翼云" class="headerlink" title="天翼云"></a>天翼云</h6><ul>
+<li>这个速度没有啥限制，我也没想过这个东西，过于小众是他的一个缺点，使用的话还是很好的，就是不知道什么时候干不下去了东西没了有些尴尬，小众网盘的缺点就是没有一个充实的保证，有跑路的风险，所以不太推荐比较值得收藏的东西用这些小众的，而且隐私问题也是一个痛点，谁知道他会不会假借网盘来收集你的数据，然后卖了你，哈哈哈哈，主要是猜想，大公司的话不太可能干这样的事情。</li>
+</ul>
+</li>
+<li><h6 id="360网盘"><a href="#360网盘" class="headerlink" title="360网盘"></a>360网盘</h6><ul>
+<li>不知所云，曾经买过一个360随身wifi（USB的），送了接近1T还是2T空间，不晓得现在还能不能用，那时候360和百度的网盘似乎都还在启动阶段，现在百度流氓都一家独大了，360网盘还是初见的模样（不忘初心，方得始终，始终这样……）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<h5 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h5><p>​        还有一种是<strong>手机厂商提供的网盘</strong>（比如我的小米云，嘿嘿），一般手机注册ID后都可以有（也不知道是什么时候开始流行起了手机和ID绑一起这种神奇操作，不过都建议注册吧，把这个ID记住了，虽然可以重置，除苹果的ID出了名的难缠以外，我用过的手机刷一下系统就可以把ID搞掉了）,ID对于手机恢复出厂设置后，以及换机后联系人等手机信息迁移非常方便，省的用一些第三方的迁移工具，还有隐私安全问题</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/01/AppStore-for-win/" rel="next" title="AppStore_for_win">
+                <i class="fa fa-chevron-left"></i> AppStore_for_win
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">leevensu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#网盘"><span class="nav-number">1.</span> <span class="nav-text">网盘</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#分类"><span class="nav-number">1.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#推荐"><span class="nav-number">1.2.</span> <span class="nav-text">推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#百度网盘"><span class="nav-number">1.2.1.</span> <span class="nav-text">百度网盘</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#微云"><span class="nav-number">1.2.2.</span> <span class="nav-text">微云</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#OneDrive"><span class="nav-number">1.2.3.</span> <span class="nav-text">OneDrive</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#MEGAsync"><span class="nav-number">1.2.4.</span> <span class="nav-text">MEGAsync</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#坚果云"><span class="nav-number">1.2.5.</span> <span class="nav-text">坚果云</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#谷歌的网盘"><span class="nav-number">1.2.6.</span> <span class="nav-text">谷歌的网盘</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#iCloud"><span class="nav-number">1.2.7.</span> <span class="nav-text">iCloud</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#天翼云"><span class="nav-number">1.2.8.</span> <span class="nav-text">天翼云</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#360网盘"><span class="nav-number">1.2.9.</span> <span class="nav-text">360网盘</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最后"><span class="nav-number">1.3.</span> <span class="nav-text">最后</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">leevensu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
